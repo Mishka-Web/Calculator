@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Служебные теги -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Подключение внешних стилей -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Calculator</title>
+
+</head>
+<body>
+    
+    <!-- Begin Контейнер -->
+    <div class="container">
+        <!-- Begin Калькулятор -->
+        <div id="calculator">
+            <form class="calculator__form" name="form-calc">
+                <div class="calculator__field">
+                    <input class="calculator__input" type="text" name="text-field" readonly>
+                </div>
+                <div class="calculator__body">
+                    <div class="calculator__numbers">
+                        <button class="calculator__btn" data-text="C">C</button>
+                        <button class="calculator__btn" data-text="delChar">&LeftArrow;</button>
+                        <button class="calculator__btn" data-control="+">&plus;</button>
+                        <button class="calculator__btn" data-control="-">&minus;</button>
+                        <button class="calculator__btn" data-control="*">&times;</button>
+                        <button class="calculator__btn" data-control="/">&divide;</button>
+                        <button class="calculator__btn" data-num="7">7</button>
+                        <button class="calculator__btn" data-num="8">8</button>
+                        <button class="calculator__btn" data-num="9">9</button>
+                        <button class="calculator__btn" data-control="(">(</button>
+                        <button class="calculator__btn" data-num="4">4</button>
+                        <button class="calculator__btn" data-num="5">5</button>
+                        <button class="calculator__btn" data-num="6">6</button>
+                        <button class="calculator__btn" data-control=")">)</button>
+                        <button class="calculator__btn" data-num="1">1</button>
+                        <button class="calculator__btn" data-num="2">2</button>
+                        <button class="calculator__btn" data-num="3">3</button>
+                        <button class="calculator__btn" data-num="0">0</button>
+                        <button class="calculator__btn" data-control=".">.</button>
+                        <button class="calculator__btn calculator__btn--color" data-control-equal="=">=</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Контейнер -->
+
+    <!-- Подключение скриптов -->
+    <script src="js/main.js"></script>
+</body>
+</html>
